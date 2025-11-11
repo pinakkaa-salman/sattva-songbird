@@ -1123,7 +1123,7 @@
       }
 
       .intro {
-        padding: 2% 0 6% 0;
+        /* padding: 2% 0 6% 0; */
       }
 
       .overlay {
@@ -1187,7 +1187,7 @@
         max-width: 100%;
         display: block;
         flex-wrap: wrap;
-        padding: 35px;
+        padding: 20px 35px;
         color: #fff;
         background: #9f8054;
         position: relative;
@@ -1244,157 +1244,156 @@
       }
     </style>
     <style>
-
       .amenities-section {
         max-width: 1300px;
-          margin: 0 auto;
-          padding: 60px 20px;
-          border-radius: 20px;
+        margin: 0 auto;
+        /* padding: 60px 20px; */
+        border-radius: 20px;
       }
 
       .section-header {
-          text-align: center;
-          margin-bottom: 50px;
+        text-align: center;
+        margin-bottom: 50px;
       }
 
       .section-title {
-          font-size: 42px;
-          font-weight: 700;
-          color: #2d3748;
-          margin-bottom: 12px;
-          letter-spacing: -0.5px;
+        font-size: 42px;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 12px;
+        letter-spacing: -0.5px;
       }
 
       .section-subtitle {
-          font-size: 16px;
-          color: #718096;
-          font-weight: 400;
-          max-width: 600px;
-          margin: 0 auto;
+        font-size: 16px;
+        color: #718096;
+        font-weight: 400;
+        max-width: 600px;
+        margin: 0 auto;
       }
 
       .amenities-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-          gap: 40px;
-          padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 0 20px;
       }
 
       .amenity-card {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          width: 140px;
-          transition: transform 0.3s ease, opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 140px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
       }
 
       .amenity-card:hover {
-          transform: translateY(-8px);
+        transform: translateY(-8px);
       }
 
       .icon-wrapper {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 16px;
-          /* box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); */
-          transition: all 0.3s ease;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+        /* box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); */
+        transition: all 0.3s ease;
       }
 
       .amenity-card:hover .icon-wrapper {
-          /* box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5); */
-          transform: scale(1.05);
+        /* box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5); */
+        transform: scale(1.05);
       }
 
       .icon-wrapper svg {
-          width: 36px;
-          height: 36px;
-          stroke: white;
-          fill: none;
-          stroke-width: 2;
-          stroke-linecap: round;
-          stroke-linejoin: round;
+        width: 36px;
+        height: 36px;
+        stroke: white;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
       }
 
       .amenity-name {
-          font-size: 15px;
-          font-weight: 600;
-          color: #2d3748;
-          line-height: 1.4;
+        font-size: 15px;
+        font-weight: 600;
+        color: #2d3748;
+        line-height: 1.4;
       }
 
       /* Responsive Design */
       @media (max-width: 768px) {
-          .section-title {
-              font-size: 32px;
-          }
+        .section-title {
+          font-size: 32px;
+        }
 
-          .section-subtitle {
-              font-size: 14px;
-          }
+        .section-subtitle {
+          font-size: 14px;
+        }
 
-          .amenities-container {
-              gap: 30px;
-          }
+        .amenities-container {
+          gap: 30px;
+        }
 
-          .amenity-card {
-              width: 120px;
-          }
+        .amenity-card {
+          width: 120px;
+        }
 
-          .icon-wrapper {
-              width: 70px;
-              height: 70px;
-          }
+        .icon-wrapper {
+          width: 70px;
+          height: 70px;
+        }
 
-          .icon-wrapper svg {
-              width: 32px;
-              height: 32px;
-          }
+        .icon-wrapper svg {
+          width: 32px;
+          height: 32px;
+        }
 
-          .amenity-name {
-              font-size: 14px;
-          }
+        .amenity-name {
+          font-size: 14px;
+        }
       }
 
       @media (max-width: 480px) {
-          .amenities-section {
-              padding: 40px 15px;
-          }
+        .amenities-section {
+          padding: 40px 15px;
+        }
 
-          .section-title {
-              font-size: 28px;
-          }
+        .section-title {
+          font-size: 28px;
+        }
 
-          .amenities-container {
-              gap: 25px;
-          }
+        .amenities-container {
+          gap: 25px;
+        }
 
-          .amenity-card {
-              width: 100px;
-          }
+        .amenity-card {
+          width: 100px;
+        }
 
-          .icon-wrapper {
-              width: 65px;
-              height: 65px;
-          }
+        .icon-wrapper {
+          width: 65px;
+          height: 65px;
+        }
 
-          .icon-wrapper svg {
-              width: 28px;
-              height: 28px;
-          }
+        .icon-wrapper svg {
+          width: 28px;
+          height: 28px;
+        }
 
-          .amenity-name {
-              font-size: 13px;
-          }
+        .amenity-name {
+          font-size: 13px;
+        }
       }
-  </style>
+    </style>
     <style>
       .manual-slider-container {
         max-width: 100%;
@@ -1530,14 +1529,25 @@
           right: 5px;
         }
       }
-      .floor-plan{
+      .floor-plan {
         display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: space-between;
         align-items: center;
       }
-      .floorplan-table{
-        width: 50%;
+      .floorplan-table {
+        width: 100%;
+      }
+      .title-section {
+        display: block;
+        font-size: 42px;
+        font-family: "Playfair Display", serif;
+        margin-bottom: 15px;
+      }
+      .location-li{
+        font-size: 0.8rem;
+        margin-bottom: 5px !important;
       }
     </style>
   </head>
@@ -1605,7 +1615,7 @@
               <img
                 src="./Sattva-Songbird_files/images/LOGO (2).png"
                 alt="Sattva logo"
-                style="opacity: 1;height: 60px !important;"
+                style="opacity: 1; height: 60px !important"
               />
             </a>
           </div>
@@ -1658,6 +1668,7 @@
             />
           </div>
         </div>
+
         <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -1671,6 +1682,8 @@
 
     <section class="benefits" style="background-color: #fff">
       <div class="container">
+        
+        <h4 style="text-align: center; margin-top: 3rem; margin-bottom: 3rem;" class="title-section">Project Overview</h4>
         <div class="row">
           <div
             class="col wow fadeInUp animated animated"
@@ -1822,10 +1835,13 @@
             </div>
           </div>
         </div>
+        
+        <h4 style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;" class="title-section">Project Highlights</h4>
         <div
           class="row align-items-center wow fadeInUp animated"
           style="visibility: visible"
         >
+        
           <div class="col-lg-6 about-img">
             <img
               src="./Sattva-Songbird_files/images/HIGHTLIGHTS.png"
@@ -1836,9 +1852,12 @@
             />
           </div>
           <!-- end col-6 -->
+           
           <div class="col-lg-6 wow fadeInUp" style="visibility: visible">
+            
+            
             <div class="content-box recent-gallery">
-              <h4>Project Highlights</h4>
+              <!-- <h4>Project Highlights</h4> -->
               <div class="unselectable">
                 <ul class="in-list1 p-0">
                   <li style="padding: 0px 0px 0px 10px !important">
@@ -2012,17 +2031,19 @@
     <section id="amenities">
       <div class="amenities-section">
         <div class="section-header">
-          <h2 class="section-title">Amenities</h2>
-          <p class="section-subtitle">
+          <h4 style="text-align: center" class="title-section">Amenities</h4>
+
+          <!-- <h2 class="section-title">Amenities</h2> -->
+          <!-- <p class="section-subtitle">
             Discover our world-class facilities designed to enhance your
             lifestyle and comfort
-          </p>
+          </p> -->
         </div>
 
         <div class="amenities-container">
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/pitch.svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/pitch.svg" alt="" />
             </div>
             <span class="amenity-name">CRICKET PITCH</span>
           </div>
@@ -2036,91 +2057,97 @@
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/gazebo.svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/gazebo.svg" alt="" />
             </div>
             <span class="amenity-name">GAZEBO</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/sandpit.svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/sandpit.svg" alt="" />
             </div>
             <span class="amenity-name">SAND PIT</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/treadmill (2).svg" alt="">
+              <img
+                src="./Sattva-Songbird_files/icons/treadmill (2).svg"
+                alt=""
+              />
             </div>
             <span class="amenity-name">OUTDOOR GYM</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/clubhouse.svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/clubhouse.svg" alt="" />
             </div>
             <span class="amenity-name">KIDS' PLAY AREA</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/hall (2).svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/hall (2).svg" alt="" />
             </div>
             <span class="amenity-name">MULTIPURPOSE COURT</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/park (2).svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/park (2).svg" alt="" />
             </div>
             <span class="amenity-name">SITTING AREA</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/tennis-equipment.svg" alt="">
+              <img
+                src="./Sattva-Songbird_files/icons/tennis-equipment.svg"
+                alt=""
+              />
             </div>
             <span class="amenity-name">TENNIS COURT</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/pool (1).svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/pool (1).svg" alt="" />
             </div>
             <span class="amenity-name">SWIMMING POOL</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/lounge (2).svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/lounge (2).svg" alt="" />
             </div>
             <span class="amenity-name">Guest Lobby Lounge</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/gym.svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/gym.svg" alt="" />
             </div>
             <span class="amenity-name">Gym</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/hall (2).svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/hall (2).svg" alt="" />
             </div>
             <span class="amenity-name">Party Hal</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/sewage.svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/sewage.svg" alt="" />
             </div>
             <span class="amenity-name">Sewage Treatment Plant</span>
           </div>
 
           <div class="amenity-card">
             <div class="icon-wrapper">
-              <img src="./Sattva-Songbird_files/icons/rainwater.svg" alt="">
+              <img src="./Sattva-Songbird_files/icons/rainwater.svg" alt="" />
             </div>
             <span class="amenity-name">Rainwater Harvesting</span>
           </div>
@@ -2142,7 +2169,7 @@
             class="col-lg-12 wow fadeInUp text-center"
             style="visibility: hidden; animation-name: none"
           >
-            <h4 style="text-align: left">Gallery</h4>
+            <h4 style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">Gallery</h4>
           </div>
         </div>
         <div class="row mt-3">
@@ -2185,16 +2212,13 @@
     <section
       id="floor-plan"
       class="property-plans"
-      style="
-        padding: 0;
-        height: auto;
-        background-size: cover;
-      "
+      style="padding: 0; height: auto; background-size: cover"
     >
       <div class="overlay pb-3">
         <div class="container">
+          
+          <h4 style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;" class="title-section">Floor Plan</h4>
           <div class="row align-items-center">
-
             <div class="manual-slider-container">
               <div class="manual-slider-wrapper">
                 <div class="manual-slider-track" id="manualSliderTrack">
@@ -2217,29 +2241,35 @@
               <div class="manual-slider-dots" id="manualSliderDots"></div>
             </div>
 
-
             <div class="floor-plan">
               <div class="floorplan-title">
-                <h4 class="text-white mb-4">Price &amp; Apartment Type</h4>
-                <h5 class="price-plot">
+                <h4 class="text-white mb-4" style="margin-top: 3rem; margin-bottom: 2rem;">Price &amp; Apartment Type</h4>
+                <!-- <h5 class="price-plot">
                   <span style="font-size: 1.25rem"
-                    >Sampoojitha Heights - Belathur Main Road, Kadugodi, Bengaluru</span
+                    >Sampoojitha Heights - Belathur Main Road, Kadugodi,
+                    Bengaluru</span
                   >
                 </h5>
-                <h5 class="price-plot">RERA Registered 12 Acre Township</h5></div>
+                <h5 class="price-plot">RERA Registered 12 Acre Township</h5> -->
+              </div>
               <div class="floorplan-table">
                 <h6 class="price-reg py-3 my-4">
                   Register To Unlock Special Offer Prices Now
                 </h6>
                 <div class="table-responsive">
-                  <table class="table table-bordered" style="text-align: center; background-color: #DCDDDF;">
+                  <table
+                    class="table table-bordered"
+                    style="text-align: center; background-color: #dcdddf"
+                  >
                     <tbody>
                       <tr>
-                        <th class="text-white">Configuration</th>
+                        <th class="text-white">Unite type</th>
+                        <th class="text-white">Sizes</th>
                         <th class="text-white">Area &amp; Price</th>
                       </tr>
                       <tr>
                         <td>2 BHK</td>
+                        <td>1457 sq.ft. - 1794 sq.ft. </td>
                         <td>
                           <a
                             id="bbt"
@@ -2247,14 +2277,15 @@
                             data-toggle="modal"
                             data-target="#enquire-form"
                             class="btn btn-sm text-white rounded-0 btn-brown"
-                            style="color: white;"
+                            style="color: white"
                           >
-                          starts at 93 Lakhs*
+                            starts at 93 Lakhs*
                           </a>
                         </td>
                       </tr>
                       <tr>
                         <td>3 BHK</td>
+                        <td>1158 sq.ft. - 1333 sq.ft. </td>
                         <td>
                           <a
                             id="bbt"
@@ -2262,20 +2293,17 @@
                             data-toggle="modal"
                             data-target="#enquire-form"
                             class="btn btn-sm text-white rounded-0 btn-brown"
-                            style="color: white;"
+                            style="color: white"
                           >
-                          starts at 1.22 Cr*
+                            starts at 1.22 Cr*
                           </a>
                         </td>
                       </tr>
                     </tbody>
                   </table>
-                </div></div>
+                </div>
+              </div>
             </div>
-            
-            
-            
-           
           </div>
         </div>
       </div>
@@ -2307,6 +2335,8 @@
       style="background-position: 100% -19.5263px"
     >
       <div class="container">
+        
+        <h4 style="text-align: center; margin-top: 2rem; margin-bottom: 3rem;" class="title-section">Location</h4>
         <div class="row align-items-center">
           <div class="col-lg-6">
             <!-- <iframe
@@ -2318,41 +2348,44 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe> -->
-            <img src="./Sattva-Songbird_files/images/map.png" alt="Map location ">
+            <img
+              src="./Sattva-Songbird_files/images/map.png"
+              alt="Map location "
+            />
           </div>
           <div
             class="col-lg-6 fadeInUp wow"
             style="visibility: hidden; animation-name: none"
           >
             <div class="content-box btnn">
-              <h4>Location</h4>
+              <!-- <h4>Location</h4> -->
               <ul class="location-text in-list p-0">
-                <li>Whitefield Railway Station – 1.8 km</li>
-                <li>Kadugodi Metro Station – 2 km</li>
-                <li>ITPL (International Tech Park Bangalore) – 5 km</li>
-                <li>Nexus Shantiniketan Mall – 7 km</li>
-                <li>Park Square Mall – 5 km</li>
-                <li>Manipal Hospital, Varthur Road – 6.5 km</li>
-                <li>Apollo Clinic, Mahadevapura – 11 km</li>
-                <li>National Public School, Whitefield – 1 km</li>
-                <li>PNC Cognitio School – 2 km</li>
-                <li>ORCHIDS The International School – 2 km</li>
-                <li>MVJ College of Engineering – 4 km</li>
-                <li>Shri Kashi Vishveshwara Swami Temple – 4 km</li>
-                <li>Reliance Digital, Belathur – 900 m</li>
-                <li>
+                <li class="location-li">Whitefield Railway Station – 1.8 km</li>
+                <li class="location-li">Kadugodi Metro Station – 2 km</li>
+                <li class="location-li">ITPL (International Tech Park Bangalore) – 5 km</li>
+                <li class="location-li">Nexus Shantiniketan Mall – 7 km</li>
+                <li class="location-li">Park Square Mall – 5 km</li>
+                <li class="location-li">Manipal Hospital, Varthur Road – 6.5 km</li>
+                <li class="location-li">Apollo Clinic, Mahadevapura – 11 km</li>
+                <li class="location-li">National Public School, Whitefield – 1 km</li>
+                <li class="location-li">PNC Cognitio School – 2 km</li>
+                <li class="location-li">ORCHIDS The International School – 2 km</li>
+                <li class="location-li">MVJ College of Engineering – 4 km</li>
+                <li class="location-li">Shri Kashi Vishveshwara Swami Temple – 4 km</li>
+                <li class="location-li">Reliance Digital, Belathur – 900 m</li>
+                <li class="location-li">
                   Proposed Peripheral Ring Road (PRR) & Upcoming Metro Station –
                   within 2 km
                 </li>
-                <li>Kempegowda International Airport – 34 km</li>
+                <li class="location-li">Kempegowda International Airport – 34 km</li>
               </ul>
-              <a
+              <!-- <a
                 href="https://sattvasongbird.in/#"
                 data-toggle="modal"
                 data-target="#enquire-form"
                 style="background-color: #fff; color: #000"
                 >SCHEDULE A VISIT</a
-              >
+              > -->
             </div>
           </div>
         </div>
@@ -2362,13 +2395,9 @@
     <!-- end intro -->
 
     <!-- end certificates -->
-    <section class="certificates" style="background-color: #dcdddf !important">
+    <!-- <section class="certificates" style="background-color: #dcdddf !important">
       <div class="container">
         <div class="row align-items-center pt-5">
-          <!-- <div class="col-lg-7 col-md-12 wow fadeInUp" style="visibility: hidden;" ">
-        
-                        </div> -->
-
           <div
             class="col-lg-6 offset-md-3 col-md-12 wow fadeInUp"
             id="contactt"
@@ -2517,10 +2546,6 @@
                         />
                       </div>
                     </div>
-                    <!-- <div class="col-lg-12">
-                            <textarea rows="2" type="text" id="footer_form_query" name="query"
-                              placeholder="Write your message here..."></textarea>
-                          </div> -->
                     <div class="col-lg-12">
                       <div class="form-group">
                         <div class="text-center">
@@ -2546,8 +2571,7 @@
           </div>
         </div>
       </div>
-      <!--end container -->
-    </section>
+    </section> -->
 
     <section class="certificates pt-5" id="faqs">
       <div class="container">
@@ -2556,7 +2580,7 @@
             class="col-lg-12 col-md-12 wow fadeInUp"
             style="visibility: hidden; animation-name: none"
           >
-            <h4 class="text-center">FAQs</h4>
+            <h4 class="text-center" style="margin-top: 3rem; margin-bottom: 1rem;">FAQs</h4>
           </div>
         </div>
         <div class="row">
@@ -2885,7 +2909,8 @@
             <div class="text-center">
               <h5 style="font-weight: 500">SITE ADDRESS</h5>
               <p>
-                Sampoojitha Heights, Belathur Main Road, Kadugodi, Bengaluru, Karnataka - 560067
+                Sampoojitha Heights, Belathur Main Road, Kadugodi, Bengaluru,
+                Karnataka - 560067
               </p>
             </div>
           </div>
@@ -2909,19 +2934,20 @@
             >Disclaimer</a
           > -->
             <small
-              ><b>Disclaimer:</b> By submitting your contact details through any form on this website, you agree to be contacted by Sampoojitha Developers via phone, email, WhatsApp, or SMS. This consent includes communications related to project updates, promotional offers, and other relevant information. Your contact information will be kept confidential.
-              </small
-            >
+              ><b>Disclaimer:</b> By submitting your contact details through any
+              form on this website, you agree to be contacted by Sampoojitha
+              Developers via phone, email, WhatsApp, or SMS. This consent
+              includes communications related to project updates, promotional
+              offers, and other relevant information. Your contact information
+              will be kept confidential.
+            </small>
           </p>
         </div>
         <ul>
-          <li> 2025. All Rights Reserved</li>
+          <li>2025. All Rights Reserved</li>
           <li class="border-right-0">
             Strategic Partner
-            <a
-              href=""
-              style="text-decoration: underline"
-              target="_blank"
+            <a href="" style="text-decoration: underline" target="_blank"
               >Casatrance</a
             >
           </li>
@@ -7409,7 +7435,7 @@
         const manualSlides = document.querySelectorAll(".manual-slider-slide");
         const manualTotalSlides = manualSlides.length;
         const manualDotsContainer = document.getElementById("manualSliderDots");
-  
+
         // Create dots
         for (let i = 0; i < manualTotalSlides; i++) {
           const dot = document.createElement("button");
@@ -7418,9 +7444,9 @@
           dot.onclick = () => manualGoToSlide(i);
           manualDotsContainer.appendChild(dot);
         }
-  
+
         const manualDots = document.querySelectorAll(".manual-slider-dot");
-  
+
         function manualUpdateSlider() {
           manualSliderTrack.style.transform = `translateX(-${
             manualCurrentSlide * 100
@@ -7429,18 +7455,18 @@
             dot.classList.toggle("active", index === manualCurrentSlide);
           });
         }
-  
+
         function manualSliderNext() {
           manualCurrentSlide = (manualCurrentSlide + 1) % manualTotalSlides;
           manualUpdateSlider();
         }
-  
+
         function manualSliderPrev() {
           manualCurrentSlide =
             (manualCurrentSlide - 1 + manualTotalSlides) % manualTotalSlides;
           manualUpdateSlider();
         }
-  
+
         function manualGoToSlide(index) {
           manualCurrentSlide = index;
           manualUpdateSlider();
