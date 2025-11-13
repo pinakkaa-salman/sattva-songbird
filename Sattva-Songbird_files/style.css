@@ -22,9 +22,9 @@ img {
 }
 
 /* CUSTOM CLASSES */
-.overflow {
+/* .overflow {
   overflow: hidden;
-}
+} */
 
 /* LINKS */
 a {
@@ -3622,7 +3622,9 @@ footer ul li:nth-child(2) {
 
 
 
-
+  .navbar{
+    display: none;
+  }
 
 
 
@@ -4244,3 +4246,6 @@ footer ul li:nth-child(2) {
 
 
 
+.first-mobi-nav-link{
+  margin-top: 8rem;
+}

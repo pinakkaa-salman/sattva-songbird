@@ -3,19 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Google Tag Manager -->
-    <script async="" src="./Sattva-Songbird_files/gtm.js.download"></script>
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TS836ZLZ");
-    </script>
+    <!-- <script async="" src="./Sattva-Songbird_files/gtm.js.download"></script> -->
     <!-- End Google Tag Manager -->
 
     <link rel="canonical" href="https://sattvasongbird.in/" />
@@ -1040,8 +1028,10 @@
         position: absolute;
         top: 0;
         right: 6px;
-        font-size: 36px;
-        margin-left: 50px;
+        font-size: 76px;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        color: white;
       }
 
       #mob-nav {
@@ -1550,6 +1540,237 @@
         font-size: 0.8rem;
         margin-bottom: 5px !important;
       }
+
+
+
+
+
+
+
+ /* Hide mobile nav by default */
+ #mob-nav {
+            display: none;
+        }
+
+        /* Show on mobile */
+        @media (max-width: 991px) {
+            #mob-nav {
+                display: block;
+            }
+        }
+
+        /* Hide the checkbox */
+        #sattva-nav-toggle-checkbox {
+            display: none;
+        }
+
+        /* Header Container */
+        .head_container {
+            background-color: #1d417f;
+            padding: 2px 3rem;
+            padding-top: 2px !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 130px;
+        }
+
+        .head_container .logo img {
+            opacity: 1;
+            height: 65px !important;
+        }
+
+        /* Menu Icon */
+        .head_container .menu {
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            width: 100%;
+        }
+
+        .head_container .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .head_container .icon {
+            color: white;
+            cursor: pointer;
+            background: none;
+            border: none;
+            /* padding: 10px; */
+            margin-top: 15px;
+            display: block;
+            width: 60px;
+            height: 40px;
+            position: relative;
+        }
+
+        /* Hamburger Lines */
+        .sattva-hamburger {
+            width: 28px;
+            height: 20px;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .sattva-hamburger span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: white;
+            border-radius: 3px;
+            opacity: 1;
+            left: 0;
+            transition: all 0.3s ease;
+        }
+
+        .sattva-hamburger span:nth-child(1) {
+            top: 0px;
+        }
+
+        .sattva-hamburger span:nth-child(2) {
+            top: 8px;
+        }
+
+        .sattva-hamburger span:nth-child(3) {
+            top: 16px;
+        }
+
+        /* Transform to X when checked */
+        #sattva-nav-toggle-checkbox:checked ~ header .sattva-hamburger span:nth-child(1) {
+            top: 8px;
+            transform: rotate(45deg);
+        }
+
+        #sattva-nav-toggle-checkbox:checked ~ header .sattva-hamburger span:nth-child(2) {
+            opacity: 0;
+        }
+
+        #sattva-nav-toggle-checkbox:checked ~ header .sattva-hamburger span:nth-child(3) {
+            top: 8px;
+            transform: rotate(-45deg);
+        }
+
+        /* Side Navigation */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: -280px;
+            background: rgba(29, 65, 127, 0.98);
+            overflow-x: hidden;
+            overflow-y: auto;
+            transition: all 0.3s ease;
+            padding-top: 80px;
+            box-shadow: 2px 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Show sidenav when checkbox is checked */
+        #sattva-nav-toggle-checkbox:checked ~ .sidenav {
+            width: 680px;
+            left: 0;
+        }
+
+        /* Close button */
+        .sidenav a.closebtn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 36px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Menu List */
+        .sidenav .menu_list {
+            list-style: none;
+            padding: 0 20px;
+        }
+
+        .sidenav .menu_list .nav_item {
+            margin-bottom: 0;
+        }
+
+        .sidenav .menu_list .nav_item a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 42px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .sidenav .menu_list .nav_item a:hover {
+            background-color: rgba(255,255,255,0.1);
+            padding-left: 30px;
+        }
+
+        /* Overlay */
+        .sattva-nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 99998;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #sattva-nav-toggle-checkbox:checked ~ .sattva-nav-overlay {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Close menu when clicking nav items or overlay */
+        .sidenav .menu_list .nav_item a,
+        .sattva-nav-overlay {
+            cursor: pointer;
+        }
+
+        /* Demo Content */
+        .demo-content {
+            padding: 120px 20px 20px;
+            text-align: center;
+        }
+
+        .demo-content h1 {
+            color: #1d417f;
+            margin-bottom: 20px;
+        }
+
+        .demo-section {
+            min-height: 100vh;
+            padding: 60px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #eee;
+        }
+
+        #silder-header { background-color: #f8f9fa; }
+        #amenities { background-color: #e9ecef; }
+        #gallery { background-color: #dee2e6; }
+        #floor-plan { background-color: #ced4da; }
+        #location { background-color: #adb5bd; }
+        #faqs { background-color: #6c757d; color: white; }
     </style>
   </head>
 
@@ -1557,58 +1778,81 @@
     contenteditable="false"
     class="page-loaded"
     cz-shortcut-listen="true"
-    style=""
   >
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TS836ZLZ"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+
     <!-- End Google Tag Manager (noscript) -->
 
-    <header id="mob-nav">
-      <div class="head_container fixed-top" style="padding-top: 2px !important">
-        <div class="logo">
-          <img
-            src="./Sattva-Songbird_files/images/LOGO (1).png"
-            alt="Sattva logo"
-            style="opacity: 1; height: 65px !important"
-            class=""
-          />
-        </div>
-        <div class="menu" id="myTopnav">
-          <ul>
-            <a
-              href="javascript:void(0);"
-              style="font-size: 15px; margin-top: 15px"
-              class="icon"
-              onclick="openNav()"
-              ><i class="fa fa-bars"></i
-            ></a>
-          </ul>
-        </div>
-      </div>
-    </header>
+      <!-- Hidden Checkbox for Toggle -->
+      <input type="checkbox" id="sattva-nav-toggle-checkbox">
 
-    <!-- Side Navigation -->
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <ul class="list-unstyled menu_list">
-          <li class="nav_item"><a href="#silder-header">HOME</a></li>
-          <li class="nav_item"><a href="#amenities">AMENITIES</a></li>
-          <li class="nav_item"><a href="#gallery">GALLERY</a></li>
-          <li class="nav_item"><a href="#floor-plan">FLOOR PLAN</a></li>
-          <li class="nav_item"><a href="#location">LOCATION</a></li>
-          <li class="nav_item"><a href="#faqs">FAQs</a></li>
-      </ul>
-  </div>
+      <!-- Mobile Navigation Header -->
+      <header id="mob-nav">
+          <div class="head_container fixed-top" style="padding-top: 2px !important">
+              <div class="logo">
+                  <img
+                      src="./Sattva-Songbird_files/images/LOGO (2).png"
+                      alt="Sattva logo"
+                      style="opacity: 1; height: 85px !important"
+                  />
+              </div>
+              <div class="menu" id="myTopnav">
+                <ul>
+                    <label for="sattva-nav-toggle-checkbox" class="icon" style="margin-top: 15px">
+                        <span class="sattva-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </label>
+                </ul>
+            </div>
+          </div>
+      </header>
+  
+      <!-- Side Navigation -->
+      <div id="mySidenav" class="sidenav">
+          <label for="sattva-nav-toggle-checkbox" class="closebtn">&times;</label>
+          <ul class="list-unstyled menu_list">
+              <li class="nav_item first-mobi-nav-link">
+                  <label for="sattva-nav-toggle-checkbox">
+                      <a href="#silder-header">HOME</a>
+                  </label>
+              </li>
+              <li class="nav_item">
+                  <label for="sattva-nav-toggle-checkbox">
+                      <a href="#amenities">AMENITIES</a>
+                  </label>
+              </li>
+              <li class="nav_item">
+                  <label for="sattva-nav-toggle-checkbox">
+                      <a href="#gallery">GALLERY</a>
+                  </label>
+              </li>
+              <li class="nav_item">
+                  <label for="sattva-nav-toggle-checkbox">
+                      <a href="#floor-plan">FLOOR PLAN</a>
+                  </label>
+              </li>
+              <li class="nav_item">
+                  <label for="sattva-nav-toggle-checkbox">
+                      <a href="#location">LOCATION</a>
+                  </label>
+              </li>
+              <li class="nav_item">
+                  <label for="sattva-nav-toggle-checkbox">
+                      <a href="#faqs">FAQs</a>
+                  </label>
+              </li>
+          </ul>
+      </div>
+  
+      <!-- Overlay (closes menu when clicked) -->
+      <label for="sattva-nav-toggle-checkbox" class="sattva-nav-overlay"></label>
 
   <!-- Overlay -->
-  <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>  
+  <!-- <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>  -->
+   
     <!-- end side-navigation -->
     <nav class="navbar" style="border-bottom: 1px solid #19407d">
       <div class="container">
@@ -6718,17 +6962,6 @@
       </script>
 
       <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "100%";
-          //document.getElementById("header").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          //document.getElementById("header").style.marginLeft= "0";
-        }
-      </script>
-      <script>
         $(document).ready(function () {
           $(".nav_item").click(function () {
             $(".sidenav").hide();
@@ -7525,6 +7758,7 @@
 <script>
   // Open Navigation
   function openNav() {
+    console.log("navbar clicked")
       const sidenav = document.getElementById("mySidenav");
       const overlay = document.getElementById("navOverlay");
       
@@ -7598,17 +7832,7 @@
 
 
     
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-        document.getElementById("header").style.marginLeft = "250px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("header").style.marginLeft= "0";  
-      }
-    </script>
+  
   </body>
 </html>
 
